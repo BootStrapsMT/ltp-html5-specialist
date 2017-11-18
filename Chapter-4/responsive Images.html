@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Images</title>
+        <style>
+            img#n {
+                width:  25%;
+                height: auto;
+            }
+            img#t {
+                width:  50%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="n" src="noc/images/nature.jpg" alt="Nature">
+        <img id="t" src="noc/images/trees.jpg" alt="Trees">
+        <br />
+        <hr />
+        <picture>
+            <source src="noc/images/trees.jpg" media="(max-width:400px)">
+            <source src="noc/images/nature.jpg">
+            <img id="n" src="noc/images/nature.jpg" alt="Nature">
+        </picture>
+    </body>
+</html>

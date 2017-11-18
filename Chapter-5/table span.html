@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table 1</title>
+        <style>
+            table{
+                width: 100%;
+            }
+            table, tr, td, th{
+                border: .15em solid green;
+                border-collapse: collapse;
+            }
+            th{
+                background: green;
+                color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th width="48%">Song</th><th>Artist</th><th>Rating</th>
+            </tr>
+            <tr>
+                <td>Track1</td><td rowspan="2">Aerist1</td><td>*****</td>
+            </tr>
+            <tr>
+                <td>Track6</td><td>****</td>
+            </tr>
+            <tr>
+                <td>Track2</td><td>Aerist2</td><td>*</td>
+            </tr>
+            <tr>
+                <td>Track3</td><td>Aerist3</td><td>****</td>
+            </tr>
+            <tr>
+                <td>Track4</td><td rowspan="2">Aerist4</td><td>**</td>
+            </tr>
+            <tr>
+                <td>Track7</td><td>**</td>
+            </tr>
+            <tr>
+                <td>Track5</td><td>Aerist5</td><td>***</td>
+            </tr>
+        </table>
+    </body>
+</html>

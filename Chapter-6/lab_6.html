@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #6</title>
+        <style>
+            #53{
+                width: 22.3em;
+                height: 200px;
+            }
+        </style>
+        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>--> 
+    </head>
+    <body>
+            <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is part of your entire body. Health problems that you may have, or medication that you may be taking, could have an important interrelationship with the dentistry you will receive. Thank you for answering the following questions.</p>
+           <form action="#" method="post">
+            <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name</label>
+            <input type="text" id="lastname" name="lastname" /><br/>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="firstname" name="firstname" /><br/>
+            <label for="bod">Birth Date</label>
+            <input type="text" id="bod" name="bod" /><br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+            <label for="1">Are you under a physician's care now?</label>
+            <input type="radio" name="1" value="yes">Yes
+            <input type="radio" name="1" value="no">No
+            <input type="text" name="1.1" placeholder=" If yes, please explain "><br/>
+            
+            <label for="2">Have you ever been hospitalized or had a major operation?</label>
+            <input type="radio" name="2" value="yes">Yes
+            <input type="radio" name="2" value="no">No
+            <input type="text" name="2.1" placeholder=" If yes, please explain "><br/>
+            
+            <label for="3">Have you ever had a serious head or neck injury?</label>
+            <input type="radio" name="3" value="yes">Yes
+            <input type="radio" name="3" value="no">No
+            <input type="text" name="3.1" placeholder=" If yes, please explain "><br/>
+            
+            <label for="4">Are you taking any medication, pills, or drugs?</label>
+            <input type="radio" name="4" value="yes">Yes
+            <input type="radio" name="4" value="no">No
+            <input type="text" name="4.1" placeholder=" If yes, please explain "><br/>
+            
+            <label for="5">Do you take, or have you taken, Phen-Fen or Redux?</label>
+            <input type="radio" name="5" value="yes">Yes
+            <input type="radio" name="5" value="no">No
+            <input type="text" name="5.1"><br/>
+            
+            <label for="6">Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphanates?</label>
+            <input type="radio" name="6" value="yes">Yes
+            <input type="radio" name="6" value="no">No
+            <input type="text" name="6.1"><br/>
+            
+            <label for="7">Are you on a special diet?</label>
+            <input type="radio" name="7" value="yes">Yes
+            <input type="radio" name="7" value="no">No<br/>
+                        
+            <label for="8">Do you use tobacco?</label>
+            <input type="radio" name="8" value="yes">Yes
+            <input type="radio" name="8" value="no">No<br/>
+                        
+            <label for="9">Do you use controlled substances?</label>
+            <input type="radio" name="9" value="yes">Yes
+            <input type="radio" name="9" value="no">No<br/>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Women: Are you</legend>
+            <label for="10">Pregnant or trying to get pregnant?</label>
+            <input type="radio" name="10" value="yes">Yes
+            <input type="radio" name="10" value="no">No<br/>
+                     
+             <label for="11">No Taking oral contraceptives? </label>
+            <input type="radio" name="11" value="yes">Yes
+            <input type="radio" name="11" value="no">No<br/>
+                     
+             <label for="12">Nursing?</label>
+            <input type="radio" name="12" value="yes">Yes
+            <input type="radio" name="1" value="no">No<br/>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Allergies</legend>
+            <label id="13">Are you allergic to any of the following?</label><br/>
+            <input type="checkbox" name="13" value="Aspirin"/>Aspirin
+            <input type="checkbox" name="13" value="Penicillin"/>Penicillin
+            <input type="checkbox" name="13" value="Codeine"/>Codeine
+            <input type="checkbox" name="13" value="Anesthetics"/>Anesthetics
+            <input type="checkbox" name="13" value="Acrylic"/>Acrylic
+            <input type="checkbox" name="13" value="Metal"/>Metal
+            <input type="checkbox" name="13" value="Latex Latex"/>Latex Latex
+            <input type="checkbox" name="13" value="Sulfa Drugs"/>Sulfa Drugs
+            <input type="checkbox" name="13" value="Sulfa Drugs"/>Other
+            <input type="text" name="13.1" placeholder=" If yes, please explain "><br/>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Do you have, or have you had any of the following?</legend>
+            <label id="13" hidden="hidden">Do you have, or have you had any of the following?</label><br/>
+            <table border="0">
+                <tr>
+                    <td><label for="14">Aids/HIV Positive</label></td><td><input type="radio" name="11" value="yes">Yes <input type="radio" name="11" value="no">No</td><td><label for="14">Aids/HIV Positive</label></td><td><input type="radio" name="11" value="yes">Yes <input type="radio" name="11" value="no">No</td>
+                </tr>
+
+                <tr><td><label for="14">Glaucoma</label></td><td><input type="radio" name="14"  value="yes">Yes <input type="radio" name="14" value="no">No</td><td><label for="33" >Emphysema</label></td><td><input type="radio" name="33"  value="yes">Yes <input type="radio" name="33 " value="no">No</td></tr>
+<tr><td><label for="15">Glaucoma</label></td><td><input type="radio" name="15 " value="yes">Yes <input type="radio" name="15" value="no">No</td><td><label for="34" >Emphysema</label></td><td><input type="radio" name="34"  value="yes">Yes <input type="radio" name="34 " value="no">No</td></tr>
+<tr><td><label for="16">Glaucoma</label></td><td><input type="radio" name="16"  value="yes">Yes <input type="radio" name="16" value="no">No</td><td><label for="35" >Emphysema</label></td><td><input type="radio" name="35"  value="yes">Yes <input type="radio" name="35 " value="no">No</td></tr>
+<tr><td><label for="17">Glaucoma</label></td><td><input type="radio" name="17 " value="yes">Yes <input type="radio" name="17" value="no">No</td><td><label for="36" >Emphysema</label></td><td><input type="radio" name="36"  value="yes">Yes <input type="radio" name="36 " value="no">No</td></tr>
+<tr><td><label for="18">Glaucoma</label></td><td><input type="radio" name="18"  value="yes">Yes <input type="radio" name="18" value="no">No</td><td><label for="37" >Emphysema</label></td><td><input type="radio" name="37"  value="yes">Yes <input type="radio" name="37 " value="no">No</td></tr>
+<tr><td><label for="19">Glaucoma</label></td><td><input type="radio" name="19 " value="yes">Yes <input type="radio" name="19" value="no">No</td><td><label for="38" >Emphysema</label></td><td><input type="radio" name="38"  value="yes">Yes <input type="radio" name="38 " value="no">No</td></tr>
+<tr><td><label for="20">Glaucoma</label></td><td><input type="radio" name="20"  value="yes">Yes <input type="radio" name="20" value="no">No</td><td><label for="39" >Emphysema</label></td><td><input type="radio" name="39"  value="yes">Yes <input type="radio" name="39 " value="no">No</td></tr>
+<tr><td><label for="21">Glaucoma</label></td><td><input type="radio" name="21 " value="yes">Yes <input type="radio" name="21" value="no">No</td><td><label for="40" >Emphysema</label></td><td><input type="radio" name="40"  value="yes">Yes <input type="radio" name="40 " value="no">No</td></tr>
+<tr><td><label for="22">Glaucoma</label></td><td><input type="radio" name="22"  value="yes">Yes <input type="radio" name="22" value="no">No</td><td><label for="41" >Emphysema</label></td><td><input type="radio" name="41"  value="yes">Yes <input type="radio" name="41 " value="no">No</td></tr>
+<tr><td><label for="23">Glaucoma</label></td><td><input type="radio" name="23 " value="yes">Yes <input type="radio" name="23" value="no">No</td><td><label for="42" >Emphysema</label></td><td><input type="radio" name="42"  value="yes">Yes <input type="radio" name="42 " value="no">No</td></tr>
+<tr><td><label for="24">Glaucoma</label></td><td><input type="radio" name="24"  value="yes">Yes <input type="radio" name="24" value="no">No</td><td><label for="43" >Emphysema</label></td><td><input type="radio" name="43"  value="yes">Yes <input type="radio" name="43 " value="no">No</td></tr>
+<tr><td><label for="25">Glaucoma</label></td><td><input type="radio" name="25 " value="yes">Yes <input type="radio" name="25" value="no">No</td><td><label for="44" >Emphysema</label></td><td><input type="radio" name="44"  value="yes">Yes <input type="radio" name="44 " value="no">No</td></tr>
+<tr><td><label for="26">Glaucoma</label></td><td><input type="radio" name="26"  value="yes">Yes <input type="radio" name="26" value="no">No</td><td><label for="45" >Emphysema</label></td><td><input type="radio" name="45"  value="yes">Yes <input type="radio" name="45 " value="no">No</td></tr>
+<tr><td><label for="27">Glaucoma</label></td><td><input type="radio" name="27 " value="yes">Yes <input type="radio" name="27" value="no">No</td><td><label for="46" >Emphysema</label></td><td><input type="radio" name="46"  value="yes">Yes <input type="radio" name="46 " value="no">No</td></tr>
+<tr><td><label for="28">Glaucoma</label></td><td><input type="radio" name="28"  value="yes">Yes <input type="radio" name="28" value="no">No</td><td><label for="47" >Emphysema</label></td><td><input type="radio" name="47"  value="yes">Yes <input type="radio" name="47 " value="no">No</td></tr>
+<tr><td><label for="29">Glaucoma</label></td><td><input type="radio" name="29 " value="yes">Yes <input type="radio" name="29" value="no">No</td><td><label for="48" >Emphysema</label></td><td><input type="radio" name="48"  value="yes">Yes <input type="radio" name="48 " value="no">No</td></tr>
+<tr><td><label for="30">Glaucoma</label></td><td><input type="radio" name="30"  value="yes">Yes <input type="radio" name="30" value="no">No</td><td><label for="49" >Emphysema</label></td><td><input type="radio" name="49"  value="yes">Yes <input type="radio" name="49 " value="no">No</td></tr>
+<tr><td><label for="31">Glaucoma</label></td><td><input type="radio" name="31 " value="yes">Yes <input type="radio" name="31" value="no">No</td><td><label for="50" >Emphysema</label></td><td><input type="radio" name="50"  value="yes">Yes <input type="radio" name="50 " value="no">No</td></tr>
+<tr><td><label for="32">Glaucoma</label></td><td><input type="radio" name="32"  value="yes">Yes <input type="radio" name="32" value="no">No</td><td><label for="51" >Emphysema</label></td><td><input type="radio" name="51"  value="yes">Yes <input type="radio" name="51 " value="no">No</td></tr>
+<tr><td><label for="33">Glaucoma</label></td><td><input type="radio" name="33 " value="yes">Yes <input type="radio" name="33" value="no">No</td><td><label for="52" >Emphysema</label></td><td><input type="radio" name="52"  value="yes">Yes <input type="radio" name="52 " value="no">No</td></tr>
+<tr><td><label for="34">Glaucoma</label></td><td><input type="radio" name="34"  value="yes">Yes <input type="radio" name="34" value="no">No</td><td><label for="53" >Emphysema</label></td><td><input type="radio" name="53"  value="yes">Yes <input type="radio" name="53 " value="no">No</td></tr>
+<tr><td><label for="35">Glaucoma</label></td><td><input type="radio" name="35 " value="yes">Yes <input type="radio" name="35" value="no">No</td><td><label for="54" >Emphysema</label></td><td><input type="radio" name="54"  value="yes">Yes <input type="radio" name="54 " value="no">No</td></tr>
+<tr><td><label for="36">Glaucoma</label></td><td><input type="radio" name="36"  value="yes">Yes <input type="radio" name="36" value="no">No</td><td><label for="55" >Emphysema</label></td><td><input type="radio" name="55"  value="yes">Yes <input type="radio" name="55 " value="no">No</td></tr>
+<tr><td><label for="37">Glaucoma</label></td><td><input type="radio" name="37 " value="yes">Yes <input type="radio" name="37" value="no">No</td><td><label for="56" >Emphysema</label></td><td><input type="radio" name="56"  value="yes">Yes <input type="radio" name="56 " value="no">No</td></tr>
+<tr><td><label for="38">Glaucoma</label></td><td><input type="radio" name="38"  value="yes">Yes <input type="radio" name="38" value="no">No</td><td><label for="57" >Emphysema</label></td><td><input type="radio" name="57"  value="yes">Yes <input type="radio" name="57 " value="no">No</td></tr>
+<tr><td><label for="39">Glaucoma</label></td><td><input type="radio" name="39 " value="yes">Yes <input type="radio" name="39" value="no">No</td><td><label for="58" >Emphysema</label></td><td><input type="radio" name="58"  value="yes">Yes <input type="radio" name="58 " value="no">No</td></tr>
+<tr><td><label for="40">Glaucoma</label></td><td><input type="radio" name="40"  value="yes">Yes <input type="radio" name="40" value="no">No</td><td><label for="59" >Emphysema</label></td><td><input type="radio" name="59"  value="yes">Yes <input type="radio" name="59 " value="no">No</td></tr>
+<tr><td><label for="41">Glaucoma</label></td><td><input type="radio" name="41 " value="yes">Yes <input type="radio" name="41" value="no">No</td><td><label for="60" >Emphysema</label></td><td><input type="radio" name="60"  value="yes">Yes <input type="radio" name="60 " value="no">No</td></tr>
+<tr><td><label for="42">Glaucoma</label></td><td><input type="radio" name="42"  value="yes">Yes <input type="radio" name="42" value="no">No</td><td><label for="61" >Emphysema</label></td><td><input type="radio" name="61"  value="yes">Yes <input type="radio" name="61 " value="no">No</td></tr>
+<tr><td><label for="43">Glaucoma</label></td><td><input type="radio" name="43 " value="yes">Yes <input type="radio" name="43" value="no">No</td><td><label for="62" >Emphysema</label></td><td><input type="radio" name="62"  value="yes">Yes <input type="radio" name="62 " value="no">No</td></tr>
+<tr><td><label for="44">Glaucoma</label></td><td><input type="radio" name="44"  value="yes">Yes <input type="radio" name="44" value="no">No</td><td><label for="63" >Emphysema</label></td><td><input type="radio" name="63"  value="yes">Yes <input type="radio" name="63 " value="no">No</td></tr>
+<tr><td><label for="45">Glaucoma</label></td><td><input type="radio" name="45 " value="yes">Yes <input type="radio" name="45" value="no">No</td><td><label for="64" >Emphysema</label></td><td><input type="radio" name="64"  value="yes">Yes <input type="radio" name="64 " value="no">No</td></tr>
+<tr><td><label for="46">Glaucoma</label></td><td><input type="radio" name="46"  value="yes">Yes <input type="radio" name="46" value="no">No</td><td><label for="65" >Emphysema</label></td><td><input type="radio" name="65"  value="yes">Yes <input type="radio" name="65 " value="no">No</td></tr>
+<tr><td><label for="47">Glaucoma</label></td><td><input type="radio" name="47 " value="yes">Yes <input type="radio" name="47" value="no">No</td><td><label for="66" >Emphysema</label></td><td><input type="radio" name="66"  value="yes">Yes <input type="radio" name="66 " value="no">No</td></tr>
+<tr><td><label for="48">Glaucoma</label></td><td><input type="radio" name="48"  value="yes">Yes <input type="radio" name="48" value="no">No</td><td><label for="67" >Emphysema</label></td><td><input type="radio" name="67"  value="yes">Yes <input type="radio" name="67 " value="no">No</td></tr>
+<tr><td><label for="49">Glaucoma</label></td><td><input type="radio" name="49 " value="yes">Yes <input type="radio" name="49" value="no">No</td><td><label for="68" >Emphysema</label></td><td><input type="radio" name="68"  value="yes">Yes <input type="radio" name="68 " value="no">No</td></tr>
+<tr><td><label for="50">Glaucoma</label></td><td><input type="radio" name="50"  value="yes">Yes <input type="radio" name="50" value="no">No</td><td><label for="69" >Emphysema</label></td><td><input type="radio" name="69"  value="yes">Yes <input type="radio" name="69 " value="no">No</td></tr>
+<tr><td><label for="51">Glaucoma</label></td><td><input type="radio" name="51 " value="yes">Yes <input type="radio" name="51" value="no">No</td><td><label for="70" >Emphysema</label></td><td><input type="radio" name="70"  value="yes">Yes <input type="radio" name="70 " value="no">No</td></tr>
+            </table>
+            <label for="52">Have you ever had any serious illness not listed above?</label>
+            <input type="radio" name="52" value="yes">Yes
+            <input type="radio" name="52" value="no">No
+            <input type="text" name="52.1" placeholder=" If yes, please explain "><br/>
+            </fieldset>
+            
+             <fieldset>
+                 <legend>Comments or concerns</legend>
+                 <label for="53" hidden="hidden">Comments or concerns</label>
+                 <textarea id="53" >Comments or concerns</textarea>
+             </fieldset>
+            <fieldset>
+                <legend>Patient consent form for treatment</legend>
+                <p>To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing incorrect information can be dangerous to my (or patient's) health. It is my responsibility to inform the dental office of any changes in medical staus.</p>
+                <label for="54">Signature of Patient, Parent, or Legal Guardian</label>
+                <input type="text" name="54" placeholder="Please type your name">                
+                <input type="date" id="55" name="date" />
+            </fieldset>
+        </form>
+    </body>
+</html>

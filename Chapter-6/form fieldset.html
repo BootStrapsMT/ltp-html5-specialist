@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic HTML Document</title>
+        <style>
+            #bio{
+                width: 22.3em;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+           <fieldset>
+           <legend>Test one</legend>
+            <label for="first">First</label>
+            <input type="text" id="first" name="first" />
+            <br />
+            <label for="last">Last</label>
+            <input type="text" id="last" name="last" />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <br />
+            <input type="phone" id="phone" placeholder="Phone Number" />
+            <br />
+            </fieldset>
+            <fieldset>
+            <legend>op2</legend>
+            <label id="bands">Bands</label>
+            <br />
+            <input type="checkbox" name="bands" value="op1" />op1<br/>
+            <input type="checkbox" name="bands" value="op2" />op2<br/>
+            <input type="checkbox" name="bands" value="op3" />op3<br/>
+            <input type="checkbox" name="bands" value="op4" />op4<br/>
+            <input type="checkbox" name="bands" value="op5" />op5<br/>
+            <br/>
+            <label id="gender">Gender</label><br/>
+            <input type="radio" name="gender" value="male">Male<br/>
+            <input type="radio" name="gender" value="female">female<br/>
+            <input type="radio" name="gender" value="other" checked="checked">Other<br/>
+            <br/>
+            <label id="state">State</label>
+            <select id="state" name="state" size="5" multiple="multiple">
+                <option value="GA">GA</option>
+                <option value="CA">CA</option>
+                <option value="MN">MN</option>
+                <option value="TX">TX</option>
+            </select>
+            <br/>
+            </fieldset>
+            <input type="submit" value="Send Form" />
+            <button type="submit">Send From</button>
+            <button type="reset">Reset</button>
+            
+        </form>
+    </body>
+</html>

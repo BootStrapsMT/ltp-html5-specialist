@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic HTML Document</title>
+        <style>
+            #can{
+                background-color: #ffffd9;                 
+            }
+        </style>
+        <script>
+            window.onload = function(){
+                var canvas = document.getElementById('can');                
+                var context = canvas.getContext("2d");
+                context.fillStyle = "#0000ff";
+                context.fillRect(50,70,170,150);
+                
+                context.moveTo(250, 75);
+                context.lineTo(120, 150);
+                context.stroke();
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="can" width="430px" height="395"></canvas>
+    </body>
+</html>
